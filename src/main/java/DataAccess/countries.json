@@ -561,7 +561,7 @@
     },
     {
         "country_iso_numeric": "384",
-        "country_name": "c�te d'ivoire",
+        "country_name": "cote d'ivoire",
         "currency_name": "cfa franc bceao",
         "currency_number": "952",
         "country_iso3": "civ",
@@ -873,7 +873,7 @@
     },
     {
         "country_iso_numeric": "840",
-        "country_name": "united states of america (the)",
+        "country_name": "united states of america",
         "currency_name": "us dollar",
         "currency_number": "840",
         "country_iso3": "usa",

@@ -1,0 +1,35 @@
+/* mainPage.css */
+
+.label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-alignment: center;
+    -fx-padding: 10px;
+}
+
+.text-field {
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ccc;
+}
+
+.button {
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+}
+
+/* Mesajul de eroare */
+.label.error {
+    -fx-text-fill: red;
+}
+
+/* Mesajul de succes */
+.label.success {
+    -fx-text-fill: green;
+}
