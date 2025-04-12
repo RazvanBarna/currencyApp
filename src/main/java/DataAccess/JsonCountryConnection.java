@@ -15,11 +15,6 @@ import java.util.Objects;
 import java.util.Set;
 
 public class JsonCountryConnection {
-    JSONObject jsonObject;
-
-    public JsonCountryConnection() {
-        jsonObject = new JSONObject();
-    }
 
     public static void setCountriesInFile(){
         try {
@@ -37,7 +32,7 @@ public class JsonCountryConnection {
         }
     }
 
-    private static  StringBuilder readLines(String filePath) throws Exception{
+    protected static  StringBuilder readLines(String filePath) throws Exception{
         URL url = new URL(filePath);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
@@ -115,13 +110,6 @@ public class JsonCountryConnection {
         in.close();
 
         return stringBuilder;
-    }
-
-
-
-
-    public static void main(String[] args) {
-        JsonCountryConnection.getCountriesFromFile();
     }
 
 }

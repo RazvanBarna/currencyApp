@@ -1,5 +1,3 @@
-/* mainPage.css */
-
 .label {
     -fx-font-size: 24px;
     -fx-font-weight: bold;
@@ -8,12 +6,20 @@
     -fx-padding: 10px;
 }
 
+.label.date {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #7f8c8d;
+    -fx-padding: 5px;
+}
+
 .text-field {
     -fx-font-size: 14px;
     -fx-padding: 10px;
     -fx-background-color: #ffffff;
     -fx-border-radius: 5px;
     -fx-border-color: #ccc;
+    -fx-max-width: 250px;
 }
 
 .button {
@@ -24,12 +30,24 @@
     -fx-border-radius: 5px;
 }
 
-/* Mesajul de eroare */
+.button.convert {
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-color: #FF9800;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+}
+
+.label.success {
+    -fx-text-fill: green;
+}
+
 .label.error {
     -fx-text-fill: red;
 }
 
-/* Mesajul de succes */
-.label.success {
-    -fx-text-fill: green;
+.label.info {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
 }

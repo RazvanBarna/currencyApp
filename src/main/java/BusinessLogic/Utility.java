@@ -1,7 +1,9 @@
 package BusinessLogic;
 
 import DataAccess.JsonCountryConnection;
+import DataAccess.JsonCurrencyConnection;
 import DataModel.Country;
+import DataModel.CurrencyData;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -19,5 +21,12 @@ public class Utility {
             }
         }
         return null;
+    }
+
+    public  double convertCurrency(String fromCountry,String toCountry , double amount){
+        JsonCurrencyConnection jsonCurrencyConnection = new JsonCurrencyConnection(fromCountry);
+        CurrencyData currencyData = jsonCurrencyConnection.connectToAPIAndFindCurrency(toCountry);
+
+        return amount* currencyData.getCurrencyValue();
     }
 }
